@@ -74,6 +74,10 @@ small, .postmetadata{
   margin-bottom: 10px;
 }
 
+.page-title{
+  font-size: 1.5em;
+}
+
 a.btn {
   display: inline-block;
   padding: 6px 12px;

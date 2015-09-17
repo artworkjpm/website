@@ -5,9 +5,10 @@
           <li class="green"><a href="http://localhost/jpmwordpress"><i class="fa fa-home"></i>Home</a></li>
           <li><a href="#" class="dropdown"><i class="fa fa-chevron-right"></i>About</a></li>
           <ul class="hidden">
-            <li><a href="#">Introduction</a></li>
-            <li><a href="#">CV</a></li>
-            <li><a href="#">History</a></li>
+            <li><a href="http://localhost/jpmwordpress/about-me">Introduction</a></li>
+            <li><a href="http://localhost/jpmwordpress/my-cv">CV</a></li>
+            <li><a href="http://localhost/jpmwordpress/skills-estimation-meter">Skills</a></li>
+            
             <li><a href="#">Hobbies</a></li>
           </ul>
 
