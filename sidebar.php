@@ -2,29 +2,29 @@
 
       <nav>
         <ul class="NoDots">
-          <li class="green"><i class="fa fa-home"></i>Home</li>
-          <li class="dropdown"><i class="fa fa-chevron-right"></i>About</li>
+          <li class="green"><a href="http://localhost/jpmwordpress"><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="#" class="dropdown"><i class="fa fa-chevron-right"></i>About</a></li>
           <ul class="hidden">
-            <li>Introduction</li>
-            <li>CV</li>
-            <li>History</li>
-            <li>Hobbies</li>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Hobbies</a></li>
           </ul>
 
 
-          <li><i class="fa fa-wrench"></i>Skills</li>
-          <li class="dropdown"><i class="fa fa-chevron-right"></i>Examples</li>
+          <li><a href="#"><i class="fa fa-wrench"></i>Skills</a></li>
+          <li><a href="#" class="dropdown"><i class="fa fa-chevron-right"></i>Examples</a></li>
           <ul class="hidden">
-            <li>Logos</li>
-            <li>Emails</li>
+            <li><a href="#">Logos</a></li>
+            <li><a href="#">Emails</a></li>
           </ul>
-          <li><i class="fa fa-wordpress"></i>Blog</li>
-          <li><i class="fa fa-envelope-o"></i>Contact</li>
+          <li><a href="#"><i class="fa fa-wordpress"></i>Blog</a></li>
+          <li><a href="#"><i class="fa fa-envelope-o"></i>Contact</a></li>
           <!-- social media-->
           <ul class="social-media">
-            <li><i class="fa fa-linkedin-square"></i></li>
-            <li><i class="fa fa-twitter"></i></li>
-            <li><i class="fa fa-facebook-official"></i></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
           </ul>
 
 

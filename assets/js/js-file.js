@@ -1,10 +1,15 @@
+
+/*drop down menus, arrows*/
 var arrow = $("i .fa.fa-chevron-right");
 
-$(".dropdown").on("click", function () {
+$(".dropdown").on("click", function (event) {
   $(this).children(arrow).toggleClass("arrow-down");
-  $(this).next("ul").toggle();
+  $(this).parent().next("ul.hidden").toggleClass("hidden-block");
+  event.preventDefault();
 });
 
+
+/*menu bar resposive*/
 var bar = $(".hidden-bar");
 var logo = $(".logo");
 var left = $(".main-container-left");
@@ -16,6 +21,8 @@ bar.on("click", function () {
   right.toggleClass("hiddenDiv");
 
 });
+
+/*menu change color*/
 
 $('ul[class="NoDots"] > li, ul[class="hidden"] > li').on("click", function () {
   $('ul[class="NoDots"]').find("li.colorIt").removeClass("colorIt");
