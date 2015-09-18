@@ -1,0 +1,17 @@
+my wordpress site: alllondonnannies.co.uk has malware, can you help me to get rid of it?
+
+Heres a picture puzzle I created, using jQuery and a pluggin I found on GitHub.
+
+It works best on Chrome and with lo res images.
+
+It uses the <a href="https://developer.mozilla.org/en/docs/Web/API/FileReader" target="_blank">FileReader()</a> constructor.
+
+[button style="btn-default btn-lg" icon="fa fa-arrow-right" align="left" type="link" target="true" title="Launch Picture Puzzle" link="http://artworkjpm.biz/puzzle"]
+
+[button style="btn-default btn-lg" icon="glyphicon glyphicon-play" align="left" type="link" target="true" title="Launch Decision-Maker App" link="http://localhost/jpmwordpress/decision-maker.html"]
+
+<a href="http://www.artworkjpm.biz/decision-maker.html" class="btn">Launch Decision-Maker App <i class="fa fa-arrow-right"></i>
+</a>
+
+
+ <a title="link to game" class="btn" href="http://www.artworkjpm.biz/snap/snap.html" target="_blank"> Play snap game <i class="fa fa-arrow-right"></i></a>
