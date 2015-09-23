@@ -4,9 +4,19 @@
       <div class="main-container-right clearfix">
 
         <section>
-        <!-- THIS IS THE BLOG INDEX PAGE-->
+
+          <h2><?php bloginfo('name'); ?></h2>
+          <p>This is the index file
+
+          </p>
           
-          <h2 class="page-title page-blogs">All blogs</h2>
+        </section>
+        
+        <aside>
+          <div class="blog_titles">Recent blogs
+          </div>
+
+
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="blogs">
               <div class="blog_thumb">
@@ -25,10 +35,7 @@
                 <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
               </p>
               <?php endif; ?>
-          
-        </section>
-        
-       <?php get_sidebar('right');?>
+        </aside>
 
         <?php get_footer(); ?>
 

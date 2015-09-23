@@ -1,0 +1,40 @@
+.hobbie-box {
+  float: left;
+  width: 240px;
+  display: inline-flex;
+  border: 1px solid grey;
+  margin: 0px 15px 15px 0px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #BBBABA;
+}
+
+.circle-image {
+  float: left;
+}
+
+.circle-text {
+  margin-top: 10px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.spin {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 2.0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+
+.hobbie-box i {
+  font-size: 50px;
+  margin-right: 15px;
+}

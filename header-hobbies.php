@@ -12,6 +12,13 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/font-awesome-4/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"  />
   
+  
+  <!--added header code-->
+  <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/hobbies.css">
+  
+  <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery-ui.js"></script>
+  
+  
   <?php wp_head(); ?>
 
 </head>

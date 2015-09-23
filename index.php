@@ -2,17 +2,13 @@
   <div class="main-container">
     <?php get_sidebar(); ?>
       <div class="main-container-right clearfix">
-
-        <section>
-
-          <h2><?php bloginfo('name'); ?></h2>
-          <p>This is the index file
-
-          </p>
-          
-        </section>
         
-        <aside>
+       <!-- add blogs page on wp admin, make /blogs page on wp admin
+-->
+        <section>
+          
+          Index page
+
           <div class="blog_titles">Recent blogs
           </div>
 
@@ -35,8 +31,12 @@
                 <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
               </p>
               <?php endif; ?>
-        </aside>
 
+          
+          
+        </section>
+        
+        <?php get_sidebar('right');?>
         <?php get_footer(); ?>
 
       </div>

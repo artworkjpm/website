@@ -1,40 +1,71 @@
 <?php get_header(); ?>
+
+
   <div class="main-container">
     <?php get_sidebar(); ?>
       <div class="main-container-right clearfix">
-
-        <section>
-
-          <h2><?php bloginfo('name'); ?></h2>
-          <p>Front page
-          </p>
+        <!--THIS IS THE HOME PAGE-->
+        <section class="home-page">
+          <!--<h1>Welcome</h1>
+          <h2>ArtworkJPM is an experienced Front-End web guy</h2>
+          <h3>He has skills in:</h3>-->
+          <div class="cube-container">
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/HTML5_Logo_512.png" alt="HTML" width="80" height="80" /><p>HTML</p>
+            </div>
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/css3-logo.png" alt="CSS" width="80" height="80" /><p>CSS</p>
+            </div>
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/javascript_logo_.png" alt="JavaScript" width="80" height="80" /><p>JavaScript</p>
+            </div>
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/jquery-logo1.jpg" alt="jQuery" width="80" height="80" /><p>jQuery</p>
+            </div>
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/php_01.png" alt="PHP" width="80" height="80" /><p>PHP</p>
+            </div>
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/wp.jpg" alt="Wordpress Development" width="80" height="80" />
+              <p>Wordpress Development</p>
+            </div>
+            <div class="skill-image">
+            <i class="fa fa-envelope-o"></i>
+              <p>Email Design</p>
+            </div>
+            
+          
+          </div>
+          
+          <hr>
+          <!--<h3>He also has skills in:</h3>-->
+          <div class="cube-container">
+            
+           
+            
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/pslogo2.jpg" alt="Photshop" width="80" height="80" />
+              <p>Photoshop</p>
+            </div>
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/Adobe_Illustrator_Icon_CS6-copy.jpg" alt="Illustrator" width="80" height="80" />
+              <p>Illustrator</p>
+            </div>
+            <div class="skill-image">
+            <img src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/indesign.jpg" alt="Indesign" width="80" height="80" />
+              <p>Indesign</p>
+            </div>
+             <div class="skill-image">
+            <i class="fa fa-picture-o"></i>
+              <p>Logo design</p>
+            </div>
+            
+          </div>
+          
           
         </section>
         
-        <aside>
-          <div class="blog_titles">Recent blogs
-          </div>
-
-
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="blogs">
-              <div class="blog_thumb">
-                <?php the_post_thumbnail( 'thumbnail' )?>
-              </div>
-              <div class="blog_snippet">
-                <h4><?php the_title(); ?></h4>
-                <?php the_excerpt();?>
-                  <a href="<?php the_permalink() ?>" class="read">Read more <i class="fa fa-arrow-right"></i>
-</a>
-              </div>
-
-            </div>
-            <?php endwhile; else : ?>
-              <p>
-                <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-              </p>
-              <?php endif; ?>
-        </aside>
+        <?php get_sidebar('right');?>
 
         <?php get_footer(); ?>
 

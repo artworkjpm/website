@@ -31,7 +31,6 @@ Author URI: http://www.artworkpm.biz
 	body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
@@ -60,22 +59,23 @@ body {
   background-color: #E8E8E8;
 }
 
-small, .postmetadata{
+p{
+  line-height: 1.2em;
+}
+
+small,
+.postmetadata {
   color: gray;
   font-size: 0.8em;
 }
 
-.entry{
+.entry {
   margin-top: 10px;
 }
 
-.entry p{
+.entry p {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.page-title{
-  font-size: 1.5em;
 }
 
 a.btn {
@@ -97,26 +97,34 @@ a.btn {
   margin-bottom: 10px;
 }
 
-
-
-a.btn:link, a.btn:visited, a.btn:link:active, a.btn:visited:active {
-    color: black;
-    text-decoration: none;
-    cursor: auto;
+a.btn:link,
+a.btn:visited,
+a.btn:link:active,
+a.btn:visited:active {
+  color: black;
+  text-decoration: none;
+  cursor: auto;
 }
 
-a.btn:hover{
+a.btn:hover {
   background-color: #BBBBBB;
   color: white;
 }
 
-.robots-nocontent{
+.robots-nocontent {
   margin-top: 20px;
 }
 
-section img{
-  margin-bottom: 15px;
+section img {
+  margin-right: 15px;
+  clear: left;
+  overflow: hidden;
 }
+
+img.alignleft {
+  float: left;
+}
+
 
 /* Box Model */
 
@@ -176,7 +184,7 @@ footer {
   color: black;
   text-align: center;
   padding: 15px 0px 15px 0px;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: sans-serif;
 }
 
@@ -211,7 +219,7 @@ ul.NoDots li:hover {
   cursor: pointer;
 }
 
-ul.NoDots li a{
+ul.NoDots li a {
   padding: 20px 20px 20px 35px;
   border-bottom: 4px solid #B3B3B3;
   display: block;
@@ -219,18 +227,16 @@ ul.NoDots li a{
   text-decoration: none;
 }
 
-
-ul.NoDots li.green a{
+ul.NoDots li.green a {
   background-color: green;
   color: white;
   border-bottom: 4px solid #FCEE21;
 }
 
-ul.NoDots li.green a:hover{
+ul.NoDots li.green a:hover {
   background-color: #FCEE21;
   color: black;
 }
-
 
 ul.hidden li:hover {
   background-color: #FCEE21;
@@ -262,8 +268,6 @@ h1.header {
   overflow: auto;
 }
 
-
-
 .arrow-down {
   transform: rotate(90deg);
 }
@@ -285,7 +289,7 @@ h1.header {
 
 aside {
   background-color: #EFEFEF;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 0px 0px;
   width: 30%;
   overflow: auto;
   float: right;
@@ -317,12 +321,12 @@ h4 {
 
 .hidden-bar {
   display: none;
-  margin: 10px 0px 0px 15px;
-  top: 15px;
+  margin: 10px 5px 0px 15px;
+  top: 11px;
   position: relative;
 }
 
-.fa-bars {
+.hidden-bar .fa {
   font-size: 2em;
   background-color: white;
   margin: 0px;
@@ -330,7 +334,7 @@ h4 {
   border-radius: 8px;
 }
 
-.fa-bars:hover {
+.hidden-bar .fa:hover {
   background-color: black;
   color: white;
 }
@@ -356,11 +360,10 @@ header .logo img {
 }
 
 
-
 /*MEDIA QUERIES*/
 
 @media all and (max-width: 1265px) {
-  .blog_snippet {
+  aside .blog_snippet {
     float: left;
     display: block;
   }
@@ -387,43 +390,61 @@ header .logo img {
     width: 50%;
     max-width: 244px;
   }
+  header {
+    float: none;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 769px;
+  }
   nav {
-    width: 260px;
+    width: 100%;
+    margin-left: 80px;
   }
   ul.NoDots li {
-    padding-left: 80px;
   }
   .main-container-right {
     margin-left: 0px;
     left: 0;
     width: 100%;
-    position: relative;
   }
   section {
     padding-right: 40px;
     margin: 20px 10px 10px 20px;
     width: 100%;
   }
-  aside {
-    background-color: #EFEFEF;
-    width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-    display: inline-block;
-    position: relative;
-    margin-top: 20px;
-  }
-  .blog_snippet {
+  img.alignleft {
+    margin-bottom: 15px;
     float: none;
   }
-  .footer-container{
+  aside {
+    background-color: #EFEFEF;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+  }
+  .footer-container {
     width: 100%;
     margin-top: 10;
+  }
+  
+  aside .blog_snippet {
+    float: none;
+  }
+  
+  .main-container{
+    background-color: #FFFFFF;
   }
 }
 
 
 /*end of media query*/
+
+.entry-title {
+  text-align: left;
+  margin-top: 20px;
+}
 
 .hiddenDiv {
   display: none;
@@ -443,8 +464,7 @@ header .logo img {
   .main-container-left {
     display: block;
   }
-  .main-container-right {
-  }
+  .main-container-right {}
   .hiddenDiv {
     display: block;
   }
@@ -456,19 +476,18 @@ header .logo img {
 
 /*end media query*/
 
+
+
 ul.social-media {
   text-align: center;
 }
 
-ul.social-media li{
+ul.social-media li {
   display: inline-block;
-  
   border-bottom: 0;
-  
-  
 }
 
-ul.social-media li a{
+ul.social-media li a {
   display: inline-block;
   padding: 20px 0px 20px 0px;
   border-bottom: 0;
@@ -506,8 +525,107 @@ ul.social-media li a:hover {
   clear: left;
 }
 
-.blogs a{
-float: right;margin-bottom: 20px;}
-.fa-arrow-right{
-margin-left: 5px;
-margin-bottom: 20p;}
+.blogs a {
+  float: right;
+  margin-bottom: 20px;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
+  margin-bottom: 20p;
+}
+
+.right-text {
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: 1.5em;
+}
+
+.page-blogs {
+  margin-bottom: 20px;
+}
+
+section .blogs {
+  padding-left: 0px;
+}
+
+section .blog_snippet {
+  float: none;
+}
+
+section .blog_thumb{
+  margin:0px;
+}
+
+@media all and (max-width: 430px) {
+  
+  section .blog_thumb img{
+    width:80px;
+    height:80px;
+    
+  }
+  
+  .skill-image img{
+  width: 40px;
+  height: 40px;
+  }
+  
+  .skill-image p{
+    font-size: 0.8em;
+    
+  }
+  
+  ul.hidden li a{
+    padding: 20px 20px 20px 30px;
+    color: black;
+    border-bottom: 4px solid #B3B3B3;
+    border-left: 20px solid #B3B3B3;
+    
+  }
+  
+  
+  
+  
+}
+
+/*end media query*/
+
+/*CUBE CONTAINER*/
+
+.cube-container{
+  float: left;
+}
+
+.skill-image img {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.skill-image i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  margin-top: 7px;
+  float: left;
+}
+
+.skill-image{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  padding: 10px 10px 0px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #BBBABA;
+}
+
+.skill-image p{
+  float: right;
+  top: 20px;
+  position: relative;
+}

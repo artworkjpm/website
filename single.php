@@ -13,7 +13,7 @@
 
  	<!-- Display the Title as a link to the Post's permalink. -->
           <?php the_post_thumbnail(array(356, 173)); ?>
- 	<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+ 	<h2><?php the_title(); ?></h2>
 
 
  	<!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
@@ -49,30 +49,7 @@
           
         </section>
         
-        <aside>
-          <div class="blog_titles">Recent blogs
-          </div>
-
-          <?php query_posts('posts_per_page=5'); ?>
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="blogs">
-              <div class="blog_thumb">
-                <?php the_post_thumbnail( 'thumbnail' )?>
-              </div>
-              <div class="blog_snippet">
-                <h4><?php the_title(); ?></h4>
-                <?php the_excerpt();?>
-                  <a href="<?php the_permalink() ?>" class="read">Read more <i class="fa fa-arrow-right"></i>
-</a>
-              </div>
-
-            </div>
-            <?php endwhile; else : ?>
-              <p>
-                <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-              </p>
-              <?php endif; ?>
-        </aside>
+        <?php get_sidebar('right');?>
 
         <?php get_footer(); ?>
 

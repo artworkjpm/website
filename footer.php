@@ -1,6 +1,6 @@
 
 <div class="footer-container">
         <footer>
-          Footer text
+          Theme created by ArtworkJPM - <i>naturally</i>
         </footer>
       </div>
