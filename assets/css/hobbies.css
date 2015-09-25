@@ -28,13 +28,28 @@
 
 .spin {
   -webkit-animation-name: rotate;
-  -webkit-animation-duration: 2.0s;
+  -webkit-animation-duration: 3.0s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
 
-
 .hobbie-box i {
   font-size: 50px;
   margin-right: 15px;
+  position: relative;
 }
+
+.hobbie-container{
+clear: left;
+}
+
+.cycle{
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.extra-wide{
+width:300px;
+}
+
