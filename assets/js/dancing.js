@@ -8,34 +8,17 @@ $(document).ready(function () {
 
   setInterval(function () {
     $(".slide-in").effect("slide", {
-      distance: 200,
+      distance: 500,
       direction: "left"
     });
-  }, 1500);
+  }, 2000);
 
   setInterval(function () {
     $(".highlight").effect("highlight", {
       color: 'yellow'
-    }, 2000);
-  }, 1000);
+    }, 3000);
+  }, 3000);
 
-  //fly
-  
-  
-
-    var flyplane = function(){
-      setInterval(function() {
-        $fly.animate({
-            right: '-=50',
-            bottom: '+=50'
-        }, 2000, function() {
-            $fly.removeAttr("style");
-        });
-    }, 2000);
- 
-};
-  
-  flyplane();
   
 
   $(".toggle-effects").on("click", function () {
@@ -47,7 +30,7 @@ $(document).ready(function () {
     $("#dance").toggleClass("dance");
     $("#slide-in").toggleClass("slide-in");
     $("#film").toggleClass("highlight");
-   
+    $("#travel").toggleClass("fly");
 
   }); //end of button click
 

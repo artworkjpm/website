@@ -1,12 +1,12 @@
 .hobbie-box {
   float: left;
   width: 240px;
-  display: inline-flex;
   border: 1px solid grey;
-  margin: 0px 15px 15px 0px;
+  margin: 0px 20px 20px 0px;
   border-radius: 15px;
   padding: 10px;
   box-shadow: 5px 5px 5px #BBBABA;
+  display: inline-block;
 }
 
 .circle-image {
@@ -39,17 +39,47 @@
   position: relative;
 }
 
-.hobbie-container{
-clear: left;
+.hobbie-container {
+  clear: left;
 }
 
-.cycle{
+.cycle {
   margin-left: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.extra-wide{
-width:300px;
+.extra-wide {
+  width: 300px;
 }
 
+i.fly {
+  -webkit-animation-name: flying;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: flying;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flying {
+  0% {
+    right: 0px;
+    bottom: 0px;
+  }
+  100% {
+    right: -50px;
+    bottom: 50px;
+  }
+}
+
+@keyframes flying {
+  0% {
+    right: 0px;
+    bottom: 0px;
+  }
+  100% {
+    right: -50px;
+    bottom: 50px;
+  }
+}

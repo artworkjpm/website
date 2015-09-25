@@ -7,7 +7,7 @@
 
           <section>
             
-            <!--<h2 class="page-title">Hobbies</h2>-->
+            <h2 class="page-title">Hobbies</h2>
             <button type="button" class="btn toggle-effects">Turn off effects</button>
             <div class="hobbie-container">
             
@@ -55,7 +55,7 @@
               <div class="hobbie-box">
               <div class="circle-image">
                 <i id="travel" class="fa fa-plane fly"></i>
-                <i id="travel-still" class="fa fa-plane" style="display:none"></i>
+                
 
               </div>
                <div class="circle-text">
