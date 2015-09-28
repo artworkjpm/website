@@ -13,7 +13,7 @@
             
             <div class="hobbie-box">
               <div class="circle-image">
-                <img src="http://localhost/jpmwordpress/wp-content/uploads/2015/09/fa-futbol.png" id="spin" class="spin">
+                <img src="http://localhost/jpmwordpress/wp-content/uploads/2015/09/fa-futbol.png" id="spin" class="spin" >
               </div>
                <div class="circle-text">
                 <p>Big football fan, sometimes I play...</p>
