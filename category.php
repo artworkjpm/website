@@ -2,14 +2,10 @@
   <div class="main-container">
     <?php get_sidebar(); ?>
       <div class="main-container-right clearfix">
-
+        <!--This page shows posts-->
         <section>
-        <!-- THIS IS THE BLOG INDEX PAGE-->
-          
-          <h2 class="page-title page-blogs">All blogs</h2>
-          
+         <h2 class="page-title page-blogs"><?php single_cat_title(); ?></h2>
           <?php get_sidebar('dropdown');?>
-          
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="blogs">
               <div class="blog_thumb">

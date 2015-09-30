@@ -1,4 +1,17 @@
- <aside>
+ 
+
+ <aside class="testimonial">
+   <div class="blog_titles">Testimonials
+          </div>
+   <?php if( !dynamic_sidebar( 'page' ) ): ?>
+
+		<h2 class="module-heading">Sidebar Setup</h2>
+		<p>Please add widgets via the admin area!</p>
+
+	<?php endif; ?>
+</aside>
+
+<aside>
           <div class="blog_titles">Recent blogs
           </div>
 
@@ -11,7 +24,7 @@
               <div class="blog_snippet">
                 <h4><?php the_title(); ?></h4>
                 <?php the_excerpt();?>
-                  <a href="<?php the_permalink() ?>" class="read">Read more <i class="fa fa-arrow-right"></i>
+                  <a href="<?php the_permalink() ?>" class="read bold-link" >Read more <i class="fa fa-arrow-right"></i>
 </a>
               </div>
 
@@ -21,4 +34,7 @@
                 <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
               </p>
               <?php endif; ?>
+   
+       
+   
         </aside>

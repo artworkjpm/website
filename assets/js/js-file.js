@@ -34,3 +34,25 @@ $('ul[class="NoDots"] > li, ul[class="hidden"] > li').on("click", function () {
   }
 
 });
+
+//remove previous page button
+
+  if ($.trim ($('div.btn.alignleft').text() ).length === 0){
+    $('div.btn.alignleft').hide()
+  } else{
+    $('div.btn.alignleft').show();
+  };
+
+if ($.trim ($('div.btn.alignright').text() ).length === 0){
+    $('div.btn.alignright').hide()
+  } else{
+    $('div.btn.alignright').show();
+  };
+
+//open linkedIn in new tab
+
+$(".linkedin .profile #cartouche").find("a").attr("target", "_blank");
+
+
+
+

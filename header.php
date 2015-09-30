@@ -10,10 +10,12 @@
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/font-awesome-4/css/font-awesome.min.css">
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"  />
+  
   
   <?php wp_head(); ?>
 
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"  />
+  
 </head>
 
 <body <?php body_class(); ?>>

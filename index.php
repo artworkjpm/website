@@ -7,10 +7,7 @@
 -->
         <section>
           
-          Index page
-
-          <div class="blog_titles">Recent blogs
-          </div>
+          <h2 class="page-title page-blogs"><?php wp_title(''); ?></h2>
 
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -21,7 +18,7 @@
               <div class="blog_snippet">
                 <h4><?php the_title(); ?></h4>
                 <?php the_excerpt();?>
-                  <a href="<?php the_permalink() ?>" class="read">Read more <i class="fa fa-arrow-right"></i>
+                 <a href="<?php the_permalink() ?>" class="read bold-link">Read more <i class="fa fa-arrow-right"></i>
 </a>
               </div>
 
@@ -32,7 +29,9 @@
               </p>
               <?php endif; ?>
 
-          
+           <div class="btn bold-link alignleft "><?php previous_posts_link( '<i class="fa fa-arrow-left"></i> Previous Posts' ); ?>
+          </div>
+<div class="btn bold-link alignright "><?php next_posts_link( 'Next Posts <i class="fa fa-arrow-right"></i>' ); ?></div>
           
         </section>
         

@@ -29,7 +29,19 @@
               </div>
             </div>
               
-              <div class="hobbie-box extra-wide">
+             
+              
+              <div class="hobbie-box">
+              <div class="circle-image">
+                <i id="film" class="fa fa-film highlight"></i>
+              </div>
+               <div class="circle-text">
+                <p>Fan of film and tv, Amazon Prime and Netflix subscriber</p>
+                
+              </div>
+            </div>
+              
+               <div class="hobbie-box extra-wide">
               <div class="circle-image">
                 <i id="slide-in" class="fa fa-bicycle slide-in"></i>
               </div>
@@ -39,16 +51,6 @@
                   <li>My <a href="http://artworkjpm.biz/cycling">cycleblog</a></li>
                   <li>My <a href="#">Strava</a> profile</li>
                  </ul>
-              </div>
-            </div>
-              
-              <div class="hobbie-box">
-              <div class="circle-image">
-                <i id="film" class="fa fa-film highlight"></i>
-              </div>
-               <div class="circle-text">
-                <p>Fan of film and tv, Amazon Prime and Netflix subscriber</p>
-                
               </div>
             </div>
               

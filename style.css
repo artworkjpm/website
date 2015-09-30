@@ -8,7 +8,7 @@ Author URI: http://www.artworkpm.biz
 
 /*
 @font-face {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif
     src: url(../font/lobster-regular.ttf);
 }
 */
@@ -21,16 +21,46 @@ Author URI: http://www.artworkpm.biz
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font-family: sans-serif;
+		font-family: Arial, Helvetica, sans-serif
 		
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
+p,
+ul,
+li,
+ol {
+  line-height: 1.2em;
+}section ul {
+  margin-left: 20px;
+}
 
-p, ul, li, ol{
-line-height: 1.2em;
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+}
+
+.bold-link {
+  font-weight: bold;
+}
+
+.btn a:hover {
+  text-decoration: none;
 }
 
 blockquote,
@@ -56,8 +86,6 @@ body {
   background-color: #E8E8E8;
 }
 
-
-
 small,
 .postmetadata {
   color: gray;
@@ -73,7 +101,9 @@ small,
   margin-bottom: 10px;
 }
 
-.btn, a.btn {
+.btn,
+a.btn,
+.pushbutton-wide {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -92,16 +122,27 @@ small,
   float: left;
 }
 
-.btn:link, a.btn:link,
-.btn:visited, a.btn:visited,
-.btn:link:active, a.btn:link:active,
-.btn:visited:active, a.btn:visited:active {
+.btn:link,
+a.btn:link,
+.pushbutton-wide:link,
+.pushbutton-wide:visted,
+.pushbutton-wide,
+.pushbutton-wide:link:active,
+.pushbutton-wide:visited:active,
+.btn:visited,
+a.btn:visited,
+.btn:link:active,
+a.btn:link:active,
+.btn:visited:active,
+a.btn:visited:active {
   color: black;
   text-decoration: none;
   cursor: auto;
 }
 
-.btn:hover, a.btn:hover {
+.btn:hover,
+a.btn:hover,
+.pushbutton-wide:hover {
   background-color: #D6D6D6;
 }
 
@@ -113,6 +154,7 @@ section img {
   margin-right: 15px;
   clear: left;
   overflow: hidden;
+  margin-bottom: 10;
 }
 
 img.alignleft {
@@ -131,7 +173,7 @@ img.alignleft {
 }
 
 strong {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 
@@ -179,7 +221,7 @@ footer {
   text-align: center;
   padding: 15px 0px 15px 0px;
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .clearfix:before,
@@ -201,6 +243,7 @@ footer {
 
 .hidden-block {
   display: block;
+  list-style: none;
 }
 
 ul.NoDots {
@@ -225,6 +268,8 @@ ul.NoDots li.green a {
   background-color: green;
   color: white;
   border-bottom: 4px solid #FCEE21;
+  height: 74px;
+  padding-top: 23px;
 }
 
 ul.NoDots li.green a:hover {
@@ -310,7 +355,7 @@ section h2,
 aside h3,
 h4 {
   margin-bottom: 10px;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
 .hidden-bar {
@@ -351,6 +396,12 @@ header .logo img {
 
 .blog_snippet {
   float: none;
+}
+
+.blogs p {
+  margin-bottom: 15px;
+  overflow: hidden;
+  line-height: 1.2em;
 }
 
 
@@ -394,8 +445,7 @@ header .logo img {
     width: 100%;
     margin-left: 80px;
   }
-  ul.NoDots li {
-  }
+  ul.NoDots li {}
   .main-container-right {
     margin-left: 0px;
     left: 0;
@@ -422,13 +472,14 @@ header .logo img {
     width: 100%;
     margin-top: 10;
   }
-  
   aside .blog_snippet {
     float: none;
   }
-  
-  .main-container{
+  .main-container {
     background-color: #FFFFFF;
+  }
+  .blogs p {
+    overflow: visible;
   }
 }
 
@@ -448,11 +499,7 @@ header .logo img {
   display: block;
 }
 
-.blogs p {
-  margin-bottom: 15px;
-  overflow: hidden;
-  line-height: 1.2em;
-}
+p {}
 
 @media all and (min-width: 769px) {
   .main-container-left {
@@ -469,8 +516,6 @@ header .logo img {
 
 
 /*end media query*/
-
-
 
 ul.social-media {
   text-align: center;
@@ -503,6 +548,7 @@ ul.social-media li a:hover {
   margin-bottom: 15px;
   padding: 0px 20px;
   float: left;
+  width: 100%;
 }
 
 .blog_titles {
@@ -539,6 +585,7 @@ ul.social-media li a:hover {
 
 .page-blogs {
   margin-bottom: 20px;
+  float: left;
 }
 
 section .blogs {
@@ -549,46 +596,63 @@ section .blog_snippet {
   float: none;
 }
 
-section .blog_thumb{
-  margin:0px;
+section .blog_thumb {
+  margin-bottom: 10px;
+}
+
+select {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #E6E6E6;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-decoration: none;
+  float: right;
+  margin: 0px;
 }
 
 @media all and (max-width: 430px) {
-  
-  section .blog_thumb img{
-    width:80px;
-    height:80px;
-    
+  section .blog_thumb img {
+    width: 80px;
+    height: 80px;
   }
-  
-  .skill-image img{
-  width: 40px;
-  height: 40px;
+  .skill-image img {
+    width: 40px;
+    height: 40px;
   }
-  
-  .skill-image p{
+  .skill-image p {
     font-size: 0.8em;
-    
   }
-  
-  ul.hidden li a{
+  ul.hidden li a {
     padding: 20px 20px 20px 30px;
     color: black;
     border-bottom: 4px solid #B3B3B3;
     border-left: 20px solid #B3B3B3;
-    
   }
   
+  select{
+    float: left;
+    margin-bottom: 20px;
+  }
   
-  
-  
+  .page-blogs{
+    margin-bottom: 10px;
+  }
 }
+
 
 /*end media query*/
 
+
 /*CUBE CONTAINER*/
 
-.cube-container{
+.cube-container {
   float: left;
 }
 
@@ -608,7 +672,7 @@ section .blog_thumb{
   float: left;
 }
 
-.skill-image{
+.skill-image {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -618,8 +682,110 @@ section .blog_thumb{
   box-shadow: 5px 5px 5px #BBBABA;
 }
 
-.skill-image p{
+.skill-image p {
   float: right;
   top: 20px;
   position: relative;
 }
+
+.row-clear-left {
+  clear: left;
+}
+
+.home-page h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.home-page h2 {
+  font-size: 20px;
+}
+
+.home-page h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.home-page p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.alignright {
+  text-align: right;
+  float: right;
+}
+
+.progress {
+  margin-bottom: 10px;
+}
+
+.bottompad {
+  margin-bottom: 10px;
+}
+
+.responsive-bar .progress-bar {
+  background-color: #929292 !important;
+}
+
+.illustrator .progress-bar {
+  background-color: #FCAB3D !important;
+}
+
+.htmlfive .progress-bar {
+  background-color: #EF6534!important;
+}
+
+.indesign .progress-bar {
+  background-color: #D8127A !important;
+}
+
+.cssthree .progress-bar {
+  background-color: #3C9DD4 !important;
+}
+
+.wpskills .progress-bar {
+  background-color: #245981 !important;
+}
+
+.jsskills .progress-bar {
+  background-color: #D4B940 !important;
+}
+
+.jqskills .progress-bar {
+  background-color: #0F6AB0 !important;
+}
+
+.php .progress-bar {
+  background-color: #5A68A5 !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.toggle-effects {
+  margin-top: 0px;
+}
+
+.entry .no-bottom {
+  margin: 10px 0px 0px 0px;
+}
+
+.testimonial_rotator_author_info {
+  font-size: 0.9em !important;
+}
+
+.widget {
+  padding-left: 20px;
+}
+
+div.sharedaddy{
+  margin-top: 20px;
+}
+
