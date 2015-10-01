@@ -779,6 +779,7 @@ select {
 
 .testimonial_rotator_author_info {
   font-size: 0.9em !important;
+  border-left: solid 3px #A5A5A5;
 }
 
 .widget {

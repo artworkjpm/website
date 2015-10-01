@@ -7,7 +7,7 @@
         <!--THIS IS THE HOME PAGE-->
         <section class="home-page">
           <h1>Welcome</h1>
-          <h2>ArtworkJPM is a Front-End Web Developer</h2>
+          <h2>Designer to Coder - Front-End Developer</h2>
           <p>I started as a Mac Artworker in the print industry and retrained to become a web designer</p>
           <p style="font-weight:bold">How did I do this?</p>
           <ul>
