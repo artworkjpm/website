@@ -18,8 +18,8 @@
   
   <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery-ui.js"></script>
   
-  
   <?php wp_head(); ?>
+  
 
 </head>
 

@@ -7,14 +7,16 @@
         <!--THIS IS THE HOME PAGE-->
         <section class="home-page">
           <h1>Welcome</h1>
-          <h2>Designer to Coder - Front-End Developer</h2>
-          <p>I started as a Mac Artworker in the print industry and retrained to become a web designer</p>
-          <p style="font-weight:bold">How did I do this?</p>
+          <p class="bold-p">What is ArtworkJPM?</p>
+          <p>ArtworkJPM is a Front-End Developer</p>
+          <p class="bold-p">What doe he do?</p>
+          <p>Formerly a Mac Artworker for print, we retrained to become a web designer</p>
+          <p class="bold-p">How did he learn web design?</p>
           <ul>
             <li>College courses at <a href="http://www.ccb.ac.uk/" target="_blank">Brighton City College</a> and <a href="http://www.pitman-training.com/" target="_blank">Pitman Training</a></li>
             <li>Online courses like <a href="https://www.codecademy.com/" target="_blank">CodeAcademy</a> and <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a></li>
             <li>Making sites for small businesses on a freelance basis</li>
-            <li>Working in an unpaid Internship at <a href="http://www.angelsmedia.co.uk/" target="_blank">Angels Media</a></li>
+            <li>Working in an unpaid internship at <a href="http://www.angelsmedia.co.uk/" target="_blank">Angels Media</a></li>
             <li>Finally working full time for <a href="http://www.printwell.co.uk/" target="_blank">Printwell</a> and currently <a href="http://15below.com/" target="_blank">15below</a></li>
           </ul>
 

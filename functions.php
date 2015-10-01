@@ -14,5 +14,6 @@ function wpt_create_widget( $name, $id, $description ) {
 }
 
 wpt_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
+wpt_create_widget( 'Search Sidebar', 'search', 'Displays on the sidebar-right' );
 
 ?>

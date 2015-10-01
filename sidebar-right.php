@@ -1,6 +1,17 @@
  
 
- <aside class="testimonial">
+<aside class="search-bar">
+<?php if( !dynamic_sidebar( 'search' ) ): ?>
+
+		<h2 class="module-heading">Sidebar Setup</h2>
+		<p>Please add widgets via the admin area!</p>
+
+	<?php endif; ?>
+
+</aside> 
+
+
+<aside class="testimonial">
    <div class="blog_titles">Testimonials
           </div>
    <?php if( !dynamic_sidebar( 'page' ) ): ?>

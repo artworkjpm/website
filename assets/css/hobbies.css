@@ -26,11 +26,24 @@
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .spin {
   -webkit-animation-name: rotate;
   -webkit-animation-duration: 3.0s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  animation-name: rotate;
+  animation-duration: 3.0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .hobbie-box i {
