@@ -6,12 +6,14 @@ Author: John Paul Moran
 Author URI: http://www.artworkpm.biz
 */
 
+
 /*
 @font-face {
-    font-family: Arial, Helvetica, sans-serif
-    src: url(../font/lobster-regular.ttf);
+    font-family: 'Lobster';
+    src: url('assets/font/Lobster-Regular.ttf') format('truetype');
 }
 */
+
 
 
 /* Reset */
@@ -108,6 +110,8 @@ small,
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
 
 .btn,
 a.btn,
@@ -342,6 +346,7 @@ aside {
   float: right;
   z-index: 10;
   clear: right;
+  font-size: 0.9em;
 }
 
 .main-container {
@@ -494,6 +499,11 @@ header .logo img {
   aside.search-bar{
     text-align: center;
   }
+  
+  .sliders img{
+  width: 80%;
+  height: 80%;
+}
 }
 
 
@@ -511,8 +521,6 @@ header .logo img {
 .show {
   display: block;
 }
-
-p {}
 
 @media all and (min-width: 798px) {
   .main-container-left {
@@ -800,6 +808,7 @@ select {
 
 aside.testimonial .widget {
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 div.sharedaddy{
@@ -850,8 +859,28 @@ aside.search-bar{
   width: 100%;
   height: 100%;
 }
-
 .home-page .bold-p {
   font-weight: bold;
   margin-top: 20px;
+}
+
+.home-page .bold-p:first-child{
+  margin-top: 0px;
+}
+
+.home-banner {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.sliders {
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+
+.home-banner{
+  opacity: 0.4;
+  padding: 20px 20px 0px 20px;
 }

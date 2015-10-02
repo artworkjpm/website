@@ -11,11 +11,23 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/font-awesome-4/css/font-awesome.min.css">
   
+  <!--Add jquery ui for animations-->
+  <?php if (is_page('home') || is_page('hobbies')){?>
+  <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery-ui.js"></script>
+  <?php } ?>
   
+  <!--this adds plugin code-->
   <?php wp_head(); ?>
-
+  
+  <!--main style sheet-->
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css"  />
   
+  <?php if (is_page('hobbies')){?>
+  <!--added header code-->
+  <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/hobbies.css">
+   <?php } ?>
+  
+
 </head>
 
 <body <?php body_class(); ?>>

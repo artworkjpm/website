@@ -1,6 +1,6 @@
 <?php /* Template Name: Hobbies */ ?>
 
-  <?php get_header('hobbies'); ?>
+  <?php get_header(); ?>
     <div class="main-container">
       <?php get_sidebar(); ?>
         <div class="main-container-right clearfix">

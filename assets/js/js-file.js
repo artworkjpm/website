@@ -53,6 +53,19 @@ if ($.trim ($('div.btn.alignright').text() ).length === 0){
 
 $(".linkedin .profile #cartouche").find("a").attr("target", "_blank");
 
+//Tob banner slider
+//make divs slide from right to left
+/*(function(){
+$("div.home-banner").children().first().show('slide', {
+        'direction' : 'right',
+        'distance' : '1000px'
+    }, 1000).delay("1000").next().show(); 
+})();*/
 
-
+$("div.home-banner").children().hide().each(function(i) {
+    var target = $(this);
+    setTimeout(function() {
+        target.show('bounce', 'slow');
+    }, 400 * i);
+});
 
