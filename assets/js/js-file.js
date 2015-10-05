@@ -1,9 +1,9 @@
 
 /*drop down menus, arrows*/
-var arrow = $("i .fa.fa-chevron-right");
+var arrow = $("i.fa.fa-chevron-right");
 
 $(".dropdown").on("click", function (event) {
-  $(this).children(arrow).toggleClass("arrow-down");
+  $(this).find(arrow).toggleClass("arrow-down");
   $(this).parent().next("ul.hidden").toggleClass("hidden-block");
   event.preventDefault();
 });

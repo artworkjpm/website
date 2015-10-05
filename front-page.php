@@ -8,12 +8,13 @@
 
         <?php get_sidebar('topbanner');?>
 
-          <section class="home-page">
+          
+        
+        <section class="home-page">
 
-            <p class="bold-p">Who is ArtworkJPM?</p>
-            <p>ArtworkJPM is a Front-End Developer</p>
-            <p class="bold-p">What does he do?</p>
-            <p>Formerly a Mac Artworker for print, we retrained to become a web designer</p>
+          <h1>ArtworkJPM is a Front-End Developer</h1>
+
+          <h2>Formerly a Mac Artworker in the print industry, he retrained to become a web designer</h2>
             <p class="bold-p">How did he learn web design?</p>
             <ul>
               <li>College courses at <a href="http://www.ccb.ac.uk/" target="_blank">Brighton City College</a> and <a href="http://www.pitman-training.com/" target="_blank">Pitman Training</a></li>
@@ -23,7 +24,9 @@
               <li>Finally working full time for <a href="http://www.printwell.co.uk/" target="_blank">Printwell</a> and currently <a href="http://15below.com/" target="_blank">15below</a></li>
             </ul>
 
-            <hr>
+       
+            
+            
             <h3>Web skills:</h3>
             <div class="cube-container">
               <div class="skill-image">
@@ -57,8 +60,9 @@
 
 
             </div>
-
-            <hr>
+        
+      
+            
             <h3>Artwork skills:</h3>
             <div class="cube-container">
 
@@ -84,6 +88,7 @@
             </div>
 
 
+         
           </section>
 
           <?php get_sidebar('right');?>

@@ -3,16 +3,21 @@
   <nav>
     <ul class="NoDots">
       <li class="green"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fa fa-home"></i>Home</a></li>
-      <li><a href="#" class="dropdown"><i class="fa fa-chevron-right"></i>About</a></li>
+      <li><a href="#" class="dropdown"><i class="fa fa-user"></i>
+Profile<i class="rightpad fa fa-chevron-right"></i></a></li>
       <ul class="hidden">
-        <li><a href="<?php echo esc_url( home_url() ); ?>/introduction">Introduction</a></li>
+        <li><a href="<?php echo esc_url( home_url() ); ?>/introduction">About</a></li>
         <li><a href="<?php echo esc_url( home_url() ); ?>/my-cv">CV</a></li>
 
         <li><a href="<?php echo esc_url( home_url() ); ?>/Hobbies">Hobbies</a></li>
+        <li><a href="<?php echo esc_url( home_url() ); ?>/category/achievements">Achievements</a></li>
+        <li><a href="<?php echo esc_url( home_url() ); ?>/references">References</a></li>
       </ul>
 
-      <li><a href="<?php echo esc_url( home_url() ); ?>/skills-estimation-meter"><i class="fa fa-wrench"></i>Skills</a></li>
-      <li><a href="#" class="dropdown"><i class="fa fa-chevron-right"></i>Examples</a></li>
+      <li><a href="<?php echo esc_url( home_url() ); ?>/skills-estimation-meter"><i class="fa fa-wrench"></i>
+Skills</a></li>
+      <li><a href="#" class="dropdown"><i class="fa fa-list"></i>
+Examples<i class="rightpad fa fa-chevron-right"></i></a></li>
 
       <ul class="hidden">
 
@@ -33,6 +38,7 @@
       </ul>
 
       <li><a href="<?php echo esc_url( home_url() ); ?>/blogs"><i class="fa fa-wordpress"></i>Blogs</a></li>
+      <li><a href="<?php echo esc_url( home_url() ); ?>/testimonials"><i class="fa fa-commenting-o"></i>Testimonials</a></li>
       <li><a href="<?php echo esc_url( home_url() ); ?>/contact-me"><i class="fa fa-envelope-o"></i>Contact</a></li>
 
 
