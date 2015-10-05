@@ -175,7 +175,7 @@ section img {
 }
 
 img.alignleft {
-  float: left;
+   float: left; 
 }
 
 
@@ -481,7 +481,7 @@ header .logo img {
   }
   img.alignleft {
     margin-bottom: 15px;
-    float: none;
+    float: left;
   }
   aside {
     background-color: #EFEFEF;
@@ -673,6 +673,9 @@ select {
     margin-bottom: 10px;
   }
   
+  .oscitas-bootstrap-container{
+    font-size: 0.9em;
+  }
   
 }
 
@@ -824,6 +827,7 @@ div.heading-box {
 aside.testimonial .widget {
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 
 div.sharedaddy{
