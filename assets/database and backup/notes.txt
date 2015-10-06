@@ -1,3 +1,16 @@
 http://localhost/jpmwordpress
 
 http://www.artworkjpm.biz
+
+UPDATE wp_options SET option_value = replace(option_value, 'http://localhost/jpmwordpress', 'http://www.artworkjpm.biz') WHERE option_name = 'home' OR option_name = 'siteurl';
+
+UPDATE wp_posts SET guid = REPLACE (guid, 'http://localhost/jpmwordpress', 'http://www.artworkjpm.biz');
+
+UPDATE wp_posts SET post_content = REPLACE (post_content, 'http://localhost/jpmwordpress', 'http://www.artworkjpm.biz');
+
+_________________________
+
+testing:
+
+
+

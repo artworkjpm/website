@@ -16,4 +16,12 @@ function wpt_create_widget( $name, $id, $description ) {
 wpt_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
 wpt_create_widget( 'Search Sidebar', 'search', 'Displays on the sidebar-right' );
 
+
+function custom_theme_setup() {
+	add_theme_support( 'post-thumbnails', true );
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
+
+add_image_size( 'recent', 100, 100, true );
+
 ?>

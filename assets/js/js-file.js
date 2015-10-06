@@ -19,6 +19,7 @@ bar.on("click", function () {
   logo.toggleClass("hiddenDiv");
   left.toggleClass("show");
   right.toggleClass("hiddenDiv");
+  $('header').toggleClass("bottom-pad");
 
 });
 

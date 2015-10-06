@@ -13,7 +13,7 @@
 
  	<!-- Display the Title as a link to the Post's permalink. -->
           <?php the_post_thumbnail(array(356, 173)); ?>
- 	<h2 class="page-title"><?php the_title(); ?></h2>
+ 	<h2 class="title-blog"><?php the_title(); ?></h2>
           
 
  	<!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->

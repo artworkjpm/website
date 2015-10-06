@@ -1,6 +1,6 @@
 <?php /* Template Name: introduction */ ?>
 
-  <?php get_header('hobbies'); ?>
+  <?php get_header(); ?>
     <div class="main-container">
       <?php get_sidebar(); ?>
         <div class="main-container-right clearfix">
@@ -45,7 +45,7 @@
 
 
     <script src="<?php bloginfo('template_directory') ?>/assets/js/js-file.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/assets/js/dancing.js"></script>
+
 
     <?php wp_footer();?>
       </body>

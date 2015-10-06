@@ -64,7 +64,7 @@
         
       
             
-            <h3>Artwork skills:</h3>
+            <h3 class="marg-top">Artwork skills:</h3>
             <div class="cube-container">
 
 

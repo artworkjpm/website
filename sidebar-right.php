@@ -30,10 +30,10 @@
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="blogs">
               <div class="blog_thumb">
-                <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( array(100,100) )?></a>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a>
               </div>
               <div class="blog_snippet">
-                <a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
+                <a href="<?php the_permalink();?>"><h4><?php the_title(); ?></h4></a>
                 <?php the_excerpt();?>
                   
               </div>

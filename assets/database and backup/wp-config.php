@@ -1,25 +1,30 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * The base configuration for WordPress
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information
- * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+
 define('WP_CACHE', false); //Added by WP-Cache Manager
 define( 'WPCACHEHOME', '' ); //Added by WP-Cache Manager
 
-define('DB_NAME', 'johnno44_newsitev2');
+define('DB_NAME', 'johnno44_artworkjpm');
 
 /** MySQL database username */
 define('DB_USER', 'johnno44_artwork');
@@ -45,37 +50,24 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '(cNA_ibDx#HOf5;N#**ra03!~*fUCOS4Qblkjf/LUh;67CpZx?W(hIm#<l-LzN-J!|l');
-define('SECURE_AUTH_KEY',  '');
-define('LOGGED_IN_KEY',    'YYzteggk~0);R19>=CfF)pp51^/jr^V5\`-|ay2X6$kP!xr6t1g$@bS2/TT=3o@I!4LK=');
-define('NONCE_KEY',        'BFnWFk-hKyPUrGv/!cb3~FfCB97CxjlHuQ~^7qdWm$Lb?yqm^-=:2Clr2@<|2IDI)F8Jp#s*EgsqMS');
-define('AUTH_SALT',        'y#_=S67H0@^dntRadGw!ZErMks=sF;9(^U8ooMrMvrTw^|b?EPGdRJ>EkXfx28ruhVLNx7cqJ7b#qXs');
-define('SECURE_AUTH_SALT', '>tJG=joQ5bSOE3PARu4sZe8J3;hi\`m>dsMsdPSxjq?2sqv3v?o7T$iiQZgVdV:P\`(#g/#Mb');
-define('LOGGED_IN_SALT',   'C8P_MKR#LRws7_i34rG-rt4GDc:ejX6Kl4Y-Ke~c)l8h_Bv_yYdjeU?!lpcqktJ1i0/8Hv(*JpN;Q4ftP');
-define('NONCE_SALT',       'PVI~YaXvrzF9uA8VHNVYc98mEkH<c8m1^tl>Lal*dtd/VJep;Cc9-$M5GWtV6#s');
+define('AUTH_KEY',         'v*&L#83!~B{Pzf+j*=T}.D2m]J(MG$uZ<1=k`LRS1Td*R=beN5a2k[]DOxMhJyaC');
+define('SECURE_AUTH_KEY',  'Z3_Q7I[zL96o,K ag9m]AID+De&}DA},T4;X4US4n}kA[Ln8ycK)b<jr7j N+bh7');
+define('LOGGED_IN_KEY',    'ya#q~ATkTP@`(S651mP[hp#bTvB! (W:{VNZGvTunRevte]RkpI&n5+hyB|<J/Qx');
+define('NONCE_KEY',        'qP0&o?fg>9X7/nuAzFaFRXN7j9Wf$cK;]$*K@EI&:TUEc2jST,mGB@>)P=T`=i7n');
+define('AUTH_SALT',        'S?I)OJUhAAi3IVRRMw*>C0#anft7.a<1xoFf;!<l:JfhTq+.a{/c8@z$Al_]^X!~');
+define('SECURE_AUTH_SALT', 'DwLL,KZ[ .v-T3S$L)@qGihL$1`&Xn;Kn27+-y(xK|>A)guP5}+2Xx$|@O~SF^;o');
+define('LOGGED_IN_SALT',   'j26B?VH>GG8,o@,+2F TfLE+pUuVqSbG @qpm57<J{q|k>Fqxx+}Xt6Q)cc{OK8H');
+define('NONCE_SALT',       'Kz+G?<63[D>f08[?F|QQq |L7AvqGvD-4lO<%k-<-,--c9y# f|cLuJLY:T/szwt');
 
 /**#@-*/
-define('AUTOSAVE_INTERVAL', 600 );
-define('WP_POST_REVISIONS', 1);
-define( 'WP_CRON_LOCK_TIMEOUT', 120 );
-define( 'WP_AUTO_UPDATE_CORE', true );
+
 /**
  * WordPress Database Table prefix.
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
-
-/**
- * WordPress Localized Language, defaults to English.
- *
- * Change this to localize WordPress. A corresponding MO file for the chosen
- * language must be installed to wp-content/languages. For example, install
- * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
- * language support.
- */
-define('WPLANG', '');
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -83,6 +75,11 @@ define('WPLANG', '');
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 
@@ -94,5 +91,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-add_filter( 'auto_update_plugin', '__return_true' );
-add_filter( 'auto_update_theme', '__return_true' );
