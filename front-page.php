@@ -21,7 +21,8 @@
               <li>Online courses like <a href="https://www.codecademy.com/" target="_blank">CodeAcademy</a> and <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a></li>
               <li>Making sites for small businesses on a freelance basis</li>
               <li>Working in an unpaid internship at <a href="http://www.angelsmedia.co.uk/" target="_blank">Angels Media</a></li>
-              <li>Finally working full time for <a href="http://www.printwell.co.uk/" target="_blank">Printwell</a> and currently <a href="http://15below.com/" target="_blank">15below</a></li>
+              <li>Working full time for <a href="http://www.printwell.co.uk/" target="_blank">Printwell</a> and currently <a href="http://15below.com/" target="_blank">15below</a></li>
+              
             </ul>
 
        

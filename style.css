@@ -47,7 +47,7 @@ hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 a {
@@ -71,6 +71,11 @@ input{
 
 .bold-link {
   font-weight: bold;
+}
+
+.bold-text-purple{
+  font-weight: bold;
+  color: purple;
 }
 
 .btn a:hover {
@@ -237,7 +242,7 @@ footer {
   color: black;
   text-align: center;
   padding: 15px 5px 15px 5px;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: Arial, Helvetica, sans-serif
 
 
@@ -250,10 +255,14 @@ footer {
 }
 
 .logo {
-  left: 240px;
+  left: 202px;
   position: relative;
-  font-size: 1.5em;
-  top: 13px;
+}
+
+.logo img{
+  width: 300px;
+  top: 11px;
+  position: relative;
 }
 
 .hidden {
@@ -383,8 +392,8 @@ h4 {
 .hidden-bar {
   display: none;
   margin: 10px 5px 0px 15px;
-  top: 11px;
-  position: relative;
+  top: 5px;
+  position: absolute;
 }
 
 .hidden-bar .fa {
@@ -393,6 +402,7 @@ h4 {
   margin: 0px;
   padding: 5px 10px 5px 10px;
   border-radius: 8px;
+  content: "";
 }
 
 .hidden-bar .fa:hover {
@@ -403,10 +413,13 @@ h4 {
 header h1 {
   display: inline-block;
   margin-left: 15px;
+  font-weight: normal;
+  top: -2px;
+  position: relative;
+  color: purple;
 }
 
 header .logo img {
-  vertical-align: middle;
 }
 
 .footer-container {
@@ -451,19 +464,29 @@ header .logo img {
   .logo {
     position: relative;
     left: 5px;
-    top: 10px;
+    top: -4px;
     display: inline;
   }
   .logo img {
-    width: 50%;
-    max-width: 244px;
+    width: 60%;
+    max-width: 254px;
+    left: 80px;
   }
   header {
     float: none;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     text-align: left;
     width: 798px;
   }
+  
+  header h1{
+  left: 60px;
+  top: 10px;
+  width: 60%;
+  font-size: 0.9em;
+  text-align: center;
+  }
+  
   nav {
     width: 100%;
     margin-left: 80px;
@@ -514,7 +537,6 @@ header .logo img {
 }
 }
 
-
 /*end of media query*/
 
 .entry-title {
@@ -534,7 +556,7 @@ header .logo img {
   .main-container-left {
     display: block;
   }
-  .main-container-right {}
+
   .hiddenDiv {
     display: block;
   }
@@ -543,9 +565,7 @@ header .logo img {
   }
 }
 
-
 /*end media query*/
-
 
 ul.social-media {
   text-align: center;

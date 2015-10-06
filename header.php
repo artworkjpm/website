@@ -38,18 +38,16 @@
     </div>
     
     
-   <!-- <div class="logo">
-      <img src="
-<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2015/10/artworkjpm16.jpg">
-      <h1>Designer to coder</h1>
-                    
-                    
-    </div>-->
-    
     <div class="logo">
-      <img src="<?php bloginfo('template_directory') ?>/assets/images/ryanair.gif">
-      <h1>Test</h1>
-                    
+      <img src="
+<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2015/10/logo-small.png">
+      <h1> designer to coder, front-end developer, cycling addict</h1>               
                     
     </div>
+    
+   <!-- <div class="logo">
+      <img src="<?php bloginfo('template_directory') ?>/assets/images/ryanair.gif">
+      <h1>Test</h1>        
+                    
+    </div>-->
   </header>
