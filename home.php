@@ -13,13 +13,12 @@
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="blogs">
               <div class="blog_thumb">
-                <?php the_post_thumbnail( 'thumbnail' )?>
+                <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'thumbnail' )?></a>
               </div>
               <div class="blog_snippet">
-                <h4><?php the_title(); ?></h4>
+                <a href="<?php the_permalink() ?>"><h4><?php the_title(); ?></h4></a>
                 <?php the_excerpt();?>
-                  <a href="<?php the_permalink() ?>" class="read bold-link">Read more <i class="fa fa-arrow-right"></i>
-</a>
+                  
               </div>
 
             </div>

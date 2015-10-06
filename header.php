@@ -38,18 +38,18 @@
     </div>
     
     
-    <div class="logo">
+   <!-- <div class="logo">
       <img src="
 <?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2015/10/artworkjpm16.jpg">
       <h1>Designer to coder</h1>
                     
                     
-    </div>
+    </div>-->
     
-    <!--<div class="logo">
+    <div class="logo">
       <img src="<?php bloginfo('template_directory') ?>/assets/images/ryanair.gif">
       <h1>Test</h1>
                     
                     
-    </div>-->
+    </div>
   </header>
