@@ -27,27 +27,43 @@
             <?php endwhile; else : ?>
           
           
-              <p>
-                <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-              </p>
-              <?php endif; ?>
-          
-          
-          <div class="btn bold-link alignleft "><?php previous_posts_link( '<i class="fa fa-arrow-left"></i> Previous Posts' ); ?>
-          </div>
-<div class="btn bold-link alignright "><?php next_posts_link( 'Next Posts <i class="fa fa-arrow-right"></i>' ); ?></div>
-          
-          
-        </section>
-        
-       <?php get_sidebar('right');?>
+            <p>
+              <?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+            </p>
+            <?php endif; ?>
 
-        <?php get_footer(); ?>
+          <div class="center-div">
+
+        <div class="btn bold-link alignleft ">
+          <?php previous_posts_link( '<i class="fa fa-arrow-left"></i> Previous Posts' ); ?>
+        </div>
+          
+      <div class="align-center">  
+        
+<?php echo paginate_links( array(
+
+    'prev_text'          => __(''),
+	'next_text'          => __(''),
+    'show_all'           => true
+
+) ); ?>
+          </div>
+
+        <div class="btn bold-link alignright ">
+          <?php next_posts_link( 'More Posts <i class="fa fa-arrow-right"></i>' ); ?></div>
+
+            </div>
+
+  </section>
+
+  <?php get_sidebar('right');?>
+
+    <?php get_footer(); ?>
 
       </div>
 
 
-  </div>
+      </div>
 
 
 

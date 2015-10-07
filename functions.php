@@ -24,4 +24,6 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
 
 add_image_size( 'recent', 100, 100, true );
 
+
+
 ?>

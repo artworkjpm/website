@@ -46,8 +46,7 @@ hr {
   margin-bottom: 20px;
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid grey;
 }
 
 a {
@@ -67,6 +66,12 @@ input{
   height: 30px;
   vertical-align: middle;
   line-height: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+#contact-form-596{
+  margin-top: 15px;
 }
 
 .bold-link {
@@ -436,7 +441,6 @@ header .logo img {
 }
 
 .blogs p {
-  margin-bottom: 15px;
   overflow: hidden;
   line-height: 1.2em;
 }
@@ -482,7 +486,7 @@ header .logo img {
   
   header h1{
   left: 60px;
-  top: 10px;
+  top: 6px;
   width: 60%;
   font-size: 0.9em;
   text-align: center;
@@ -513,7 +517,6 @@ header .logo img {
     margin-left: 0px;
     margin-top: 20px;
     width: 100%;
-    float: left;
   }
   .footer-container {
     width: 100%;
@@ -597,7 +600,7 @@ ul.social-media li a:hover {
 .blogs {
   border-bottom: 1px solid grey;
   margin-bottom: 15px;
-  padding: 0px 20px;
+  padding: 0px 20px 15px 20px;
   float: left;
   position: relative;
 }
@@ -673,6 +676,9 @@ select {
   margin: 0px;
 }
 
+
+/***********THE MOBILE SIZE****************/
+
 @media all and (max-width: 430px) {
   section .blog_thumb img {
   }
@@ -697,10 +703,15 @@ select {
   
   .page-blogs{
     margin-bottom: 10px;
+    margin-right: 10px;
   }
   
   .oscitas-bootstrap-container{
     font-size: 0.9em;
+  }
+  
+  .center-div .btn{
+    font-size: 0.8em;
   }
   
 }
@@ -988,4 +999,17 @@ h1.header {
 
 .bottom-pad{
   padding-bottom: 40px;
+}
+
+.align-center{
+  text-align: center;
+  float: left;
+  font-weight: bold;
+  padding: 18px;
+}
+
+.center-div{
+  text-align: center;
+  width: 100%;
+  float: left;
 }

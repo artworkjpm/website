@@ -12,8 +12,7 @@
 
 
 <aside class="testimonial">
-   <div class="blog_titles">Testimonials
-          </div>
+   <div class="blog_titles">Testimonials</div>
    <?php if( !dynamic_sidebar( 'page' ) ): ?>
 
 		<h2 class="module-heading">Sidebar Setup</h2>
@@ -37,7 +36,9 @@
                 <?php the_excerpt();?>
                   
               </div>
-
+              
+             
+                
             </div>
             <?php endwhile; else : ?>
               <p>
