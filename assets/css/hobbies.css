@@ -62,8 +62,8 @@
   margin-bottom: 5px;
 }
 
-.extra-wide {
-  width: 300px;
+.extra-wide p {
+   overflow: hidden;
 }
 
 i.fly {

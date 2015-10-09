@@ -9,7 +9,7 @@ Profile<i class="rightpad fa fa-chevron-right"></i></a></li>
         <li><a href="<?php echo esc_url( home_url() ); ?>/introduction">About</a></li>
         <li><a href="<?php echo esc_url( home_url() ); ?>/my-cv">CV</a></li>
 
-        <li><a href="<?php echo esc_url( home_url() ); ?>/Hobbies">Hobbies</a></li>
+       
         <li><a href="<?php echo esc_url( home_url() ); ?>/category/achievements">Achievements</a></li>
         <li><a href="<?php echo esc_url( home_url() ); ?>/references">References</a></li>
       </ul>

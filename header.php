@@ -14,6 +14,8 @@
   <!--Add jquery ui for animations-->
   <?php if (is_page('home') || is_page('hobbies')){?>
   <script src="<?php bloginfo('template_directory') ?>/assets/js/jquery-ui.js"></script>
+  <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/hobbies.css">
+  
   <?php } ?>
   
   <!--this adds plugin code-->
@@ -39,8 +41,8 @@
     
     
     <div class="logo">
-      <img src="
-<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2015/10/logo-small.png">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="
+        <?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2015/10/logo-small.png"></a>
       <h1> designer to coder, front-end developer, cycling addict</h1>               
                     
     </div>

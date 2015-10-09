@@ -12,7 +12,7 @@
             
             <div class="blogs">
               <div class="blog_thumb">
-                <img class="wp-image-635 size-thumbnail" src="http://localhost/jpmwordpress/wp-content/uploads/2014/09/london-me1-150x150.jpg" alt="" width="150" height="150" />
+                <img class="wp-image-635 size-thumbnail" src="http://www.artworkjpm.biz/wp-content/uploads/2014/09/london-me1-150x150.jpg" alt="" width="150" height="150" />
               </div>
               <div class="blog_snippet intro">
                 <p><strong>Hi, I'm John Paul Moran</strong> - <i>AKA ArtworkJPM</i></p>

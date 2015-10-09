@@ -25,7 +25,7 @@
               
             </ul>                
             
-            <h3>Web skills:</h3>
+            <h3 class="border-text"><span class="text-inside-left">Web skills</span></h3>
             <div class="cube-container">
               <div class="skill-image">
                 <img src="http://www.artworkjpm.biz/wp-content/uploads/2014/09/HTML5_Logo_512.png" alt="HTML" width="80" height="80" />
@@ -57,7 +57,7 @@
               </div>
             </div>           
             
-            <h3 class="marg-top">Artwork skills:</h3>
+             <h3 class="border-text"><span class="text-inside-left">Artwork skills</span></h3>
             <div class="cube-container">
 
               <div class="skill-image">
@@ -78,6 +78,8 @@
               </div>
 
             </div>
+          
+          <?php get_template_part('content', 'hobbies');?>
 
 
          
@@ -95,6 +97,7 @@
 
 
   <script src="<?php bloginfo('template_directory') ?>/assets/js/js-file.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/assets/js/dancing.js"></script>
 
   <?php wp_footer();?>
     </body>

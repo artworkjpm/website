@@ -39,6 +39,7 @@ ol {
   line-height: 1.2em;
 }section ul {
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 hr {
@@ -63,11 +64,16 @@ a:visited {
 }
 
 input{
-  height: 30px;
+  height: 40px;
   vertical-align: middle;
   line-height: 10px;
   border: 1px solid gray;
   padding: 10px;
+}
+
+textarea{
+  border: 1px solid gray;
+  width: 100%;
 }
 
 #contact-form-596{
@@ -181,7 +187,6 @@ section img {
   margin-right: 15px;
   clear: left;
   overflow: hidden;
-  margin-bottom: 10;
 }
 
 img.alignleft {
@@ -317,10 +322,10 @@ ul.hidden li:hover {
 }
 
 ul.hidden li a {
-  padding: 20px 20px 20px 30px;
+  padding: 20px 20px 20px 20px;
   color: black;
   border-bottom: 4px solid #B3B3B3;
-  border-left: 20px solid #B3B3B3;
+  border-left: 10px solid #B3B3B3;
 }
 
 .NoDots {
@@ -503,9 +508,9 @@ header .logo img {
     width: 100%;
   }
   section {
-    padding-right: 40px;
+    padding-right: 10px;
     margin: 20px 10px 10px 20px;
-    width: 100%;
+    width: 93%;
   }
   img.alignleft {
     margin-bottom: 15px;
@@ -690,10 +695,10 @@ select {
     font-size: 0.8em;
   }
   ul.hidden li a {
-    padding: 20px 20px 20px 30px;
+    padding: 20px 20px 20px 20px;
     color: black;
     border-bottom: 4px solid #B3B3B3;
-    border-left: 20px solid #B3B3B3;
+    border-left: 10px solid #B3B3B3;
   }
   
   select{
@@ -714,6 +719,11 @@ select {
     font-size: 0.8em;
   }
   
+  .wp-post-image{
+    width: 275px;
+    height: 145px;
+  }
+  
 }
 
 
@@ -724,6 +734,9 @@ select {
 
 .cube-container {
   float: left;
+}
+.last{
+  margin-bottom: 20px;
 }
 
 .skill-image img {
@@ -750,10 +763,11 @@ select {
   padding: 10px 15px 0px 10px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px #BBBABA;
+  display: inline-flex;
 }
 
 .skill-image p {
-  float: right;
+  float: left;
   top: 7px;
   position: relative;
 }
@@ -761,6 +775,9 @@ select {
 .row-clear-left {
   clear: left;
 }
+
+.clear-fix{
+width: 100%;float: left;}
 
 div.heading-box {
   /* overflow: hidden; */
@@ -782,8 +799,8 @@ div.heading-box {
 
 .home-page h3 {
   font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
   float: left;
 }
 
@@ -1007,9 +1024,78 @@ h1.header {
   font-weight: bold;
   padding: 18px;
 }
-
-.center-div{
+.center-div {
   text-align: center;
   width: 100%;
   float: left;
+}
+
+.intro p {
+  margin: 20px 0px 20px 0px;
+}
+
+.intro p:first-child {
+  margin-top: 0px;
+}
+
+.border-text {
+  border-top: 1px solid purple;
+  width: 100%;
+}
+
+.text-inside-left {
+  background-color: #ffffff;
+  top: -12px;
+  position: relative;
+  padding-right: 10px;
+}
+
+#respond{
+  font-size: 0.8em;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+}
+
+#respond h3,
+h3#comments {
+  margin: 0px 0px 10px 0px;
+}
+
+#respond h3{
+  margin-top: 10px;
+}
+
+#commentform p,
+p#comments {
+  margin-bottom: 10px;
+}
+
+.comment-meta{
+  margin-bottom: 10px;
+}
+
+.comment-meta a{
+  font-size: 0.8em;
+  color: gray;
+}
+
+ol.commentlist{
+  margin-left: 20px;
+  font-size: 0.8em;
+}
+
+.reply{
+ color: gray;
+font-weight: bold;
+  margin-top: 10px;
+}
+
+.says{
+  display: none;
+}
+
+.comments-gray{
+  background-color: #EFEFEF;
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
 }

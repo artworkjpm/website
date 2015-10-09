@@ -18,11 +18,9 @@ wpt_create_widget( 'Search Sidebar', 'search', 'Displays on the sidebar-right' )
 
 
 function custom_theme_setup() {
-	add_theme_support( 'post-thumbnails', true );
+	add_theme_support( 'post-thumbnails');
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
-
-add_image_size( 'recent', 100, 100, true );
 
 
 
