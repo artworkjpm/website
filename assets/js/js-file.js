@@ -63,10 +63,10 @@ $("div.home-banner").children().first().show('slide', {
     }, 1000).delay("1000").next().show(); 
 })();*/
 
-$("div.home-banner").children().hide().each(function(i) {
+/*$("div.home-banner").children().hide().each(function(i) {
     var target = $(this);
     setTimeout(function() {
-        target.show('bounce', 'slow');
+        target.show("bounce", { times: 1 }, "slow");
     }, 400 * i);
-});
+});*/
 

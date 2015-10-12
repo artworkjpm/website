@@ -37,7 +37,7 @@ ul,
 li,
 ol {
   line-height: 1.2em;
-}section ul {
+}section ul, ol {
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -74,6 +74,10 @@ input{
 textarea{
   border: 1px solid gray;
   width: 100%;
+}
+
+.italics{
+  font-style: italic;
 }
 
 #contact-form-596{
