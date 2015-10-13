@@ -25,11 +25,14 @@
 
  	<div class="entry">
  		<?php the_content(); ?>
+      
+      <div class="tags-small">
+          <p><?php the_tags(); ?></p> 
+      </div>
  	</div>
-
-
+          
  	<!-- Display a comma separated list of the Post's Categories. -->
-
+            
  	<p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
  	<div class="comments-gray"><?php comments_template(); ?> 
       </div>

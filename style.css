@@ -1103,3 +1103,8 @@ font-weight: bold;
   padding: 20px 20px 20px 20px;
   margin-top: 20px;
 }
+
+.tags-small{
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
