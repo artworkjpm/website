@@ -39,7 +39,7 @@ Examples<i class="rightpad fa fa-chevron-right"></i></a></li>
 
       <li><a href="<?php echo esc_url( home_url() ); ?>/blogs"><i class="fa fa-wordpress"></i>Blogs</a></li>
       <li><a href="<?php echo esc_url( home_url() ); ?>/testimonials"><i class="fa fa-commenting-o"></i>Testimonials</a></li>
-      <li><a href="<?php echo esc_url( home_url() ); ?>/category/cycling/"><i class="fa fa-bicycle"></i>Cycling</a></li>
+      <li><a href="<?php echo esc_url( home_url() ); ?>/category/cycling/"><i class="fa fa-bicycle cycle-menu"></i>Cycling</a></li>
       <li><a href="<?php echo esc_url( home_url() ); ?>/contact-me"><i class="fa fa-envelope-o"></i>Contact</a></li>
 
 

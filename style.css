@@ -1108,3 +1108,7 @@ font-weight: bold;
   font-size: 0.9em;
   margin-bottom: 10px;
 }
+.cycle-menu{
+  margin-right: 8px;
+  margin-left: -2px;
+}
